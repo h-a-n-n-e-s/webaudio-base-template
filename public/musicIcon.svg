@@ -1,0 +1,10 @@
+<svg
+version='1.1'
+xmlns='http://www.w3.org/2000/svg'
+viewBox='0 0 2 2'>
+  <!-- <rect style='fill:#023' width='2' height='2'></rect> -->
+  <text style='fill:cyan; font-family:sans-serif'>
+    <tspan style='font-size:1px' y='0.9'> 音楽 </tspan>
+    <tspan style='font-size:0.75px' x='0' y='1.8'> music </tspan>
+  </text>
+</svg>

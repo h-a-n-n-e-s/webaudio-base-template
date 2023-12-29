@@ -1,0 +1,129 @@
+
+:root {
+  --bg: #222;
+  --tc: #fff;
+  --lc: #fff;
+  --bc: #fff;
+  --bbc: #333;
+  --gbc: #252525;
+  --fmc: #333;
+  --sbc: #666;
+  --stc: #fff;
+
+  font-family: monospace;
+  font-size: 16px;
+  color: var(--tc);
+  background-color: var(--bg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+:root.light-theme {
+  --bg: #fed;
+  --tc: #000;
+  --lc: #000;
+  --bc: #000;
+  --bbc: #bbb;
+  --gbc: #edc;
+  --fmc: #edc;
+  --sbc: #aaa;
+  --stc: #000;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button {
+  position: absolute;
+  background-color: var(--bbc);
+  opacity: 0.7;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--bc);;
+  height: 22px;
+  font-size: 16px;
+  font-family: inherit;
+}
+button:hover {
+  opacity:0.5
+}
+button:disabled {
+  opacity: 0.1;
+  cursor: default;
+}
+.switchButtonOff {
+  background-color: var(--bbc);
+  color: var(--bc);;
+}
+.switchButtonOn {
+  background-color: var(--bc);
+  color: var(--bbc);
+}
+
+
+/* slider ------------- */
+.sliderContainer {
+  position: relative;
+  height: 22px;
+  margin: auto;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.sliderContainer > p {
+  position: absolute;
+  left: 5px;
+  height: 22px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+.slider {
+  position: absolute;
+  left: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 22px;
+  background: var(--sbc);
+  outline: none;
+  border: none;
+  opacity: 0.3;
+  cursor: inherit;
+  margin:0;
+  border-radius: 4px;
+}
+.slider:hover {opacity: 0.5}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border-radius: 4px;
+  appearance: none;
+  outline: none;
+  border: none;
+  width: 22px;
+  height: 22px;
+  background: var(--stc);
+}
+.slider::-moz-range-thumb {
+  appearance: none;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  width: 22px;
+  height: 22px;
+  background: var(--stc);
+}
+
+#volumeSlider {
+  position: absolute;
+  top: 42px;
+  left: 10px;
+}
